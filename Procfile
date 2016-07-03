@@ -1,1 +1,1 @@
-web: sh target/crossandzero.war
+web: java -cp target/classes/
