@@ -13,16 +13,16 @@ public class Message implements Serializable{
     
     private String value;
     private Player player; 
-    private Cmd ñmd;
+    private Cmd cmd;
     private GameRes gameRes;
     private List<Player> playerList;
     
     
     
-    public Message(String value, Cmd ñmd) {
+    public Message(String value, Cmd cmd) {
         super();
         this.value = value;
-        this.ñmd = ñmd;
+        this.cmd = cmd;
       
     }
     
@@ -41,12 +41,12 @@ public class Message implements Serializable{
 
 
     public Cmd getCmd() {
-        return ñmd;
+        return cmd;
     }
 
 
     public void setCmd(Cmd cmd) {
-        this.ñmd = cmd;
+        this.cmd = cmd;
     }
 
     public GameRes getGameRes() {
