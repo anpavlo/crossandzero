@@ -48,9 +48,9 @@ Game.connect = (function(host) {
 
 Game.initialize = function() {
     if (window.location.protocol == 'http:') {
-        Game.connect('ws://' + window.location.host + '/crossandzero/websocket/game');
+        Game.connect('ws://' + window.location.host + '/websocket/game');
     } else {
-        Game.connect('wss://' + window.location.host + '/crossandzero/websocket/game');
+        Game.connect('wss://' + window.location.host + '/websocket/game');
     }
 };
 
